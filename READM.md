@@ -12,6 +12,10 @@ Our uniform grids are like quadtrees, except we delay splits and refine all leav
 flat it can be represented using very little memory: we just need the indices of the active leaves and a global level.
 Also it is very simple to sample from leaves with uniform probability.
 
+![image](https://user-images.githubusercontent.com/67281513/127719944-d3bf3a3f-8258-4ee4-b14e-de5f29e9b5f7.png)
+
+
+
 This is my implementation for  "A Simple Algorithm for Maximal Poisson-Disk Sampling in High Dimensions".
 
 ## Referances
