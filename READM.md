@@ -1,3 +1,4 @@
+# A simple algorithm for maximal Poisson-disk sampling 
 We provide a simple algorithm and data structures implementation  for 2D unbiased maximal Poisson-disk sampling.This algorithm use an order of magnitude less memory and time 
 than the alternatives. 
 Our results become more favorable as the dimension increases. This allows us to produce bigger samplings. Domains may be non-convex with holes.
