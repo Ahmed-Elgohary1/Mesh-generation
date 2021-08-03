@@ -15,9 +15,9 @@ Also it is very simple to sample from leaves with uniform probability.
 
 ![image](https://user-images.githubusercontent.com/67281513/127719944-d3bf3a3f-8258-4ee4-b14e-de5f29e9b5f7.png)
 
+                                                  fig.1
+In case of figure 1 domain width is 1cm and length is 1cm  and the disk radius is .01cm .
 
-
-This is my implementation for  "A Simple Algorithm for Maximal Poisson-Disk Sampling in High Dimensions".
 
 ## Referances
 
