@@ -238,8 +238,6 @@ int main()
 		}
 	}
 
-	/*double yc1(0.0), yc2(0.0), yc3(0.0), yc4(0.0);
-	double xc1(0.0), xc2(0.0), xc3(0.0), xc4(0.0);*/
 
 	size_t Nr = 4 * N, Nvr = 2 * Nv, Nhr = 2 * Nh, f = 2, h = 0;
 	double sr = 0.5 * s;
@@ -418,17 +416,7 @@ int main()
 	file << "/Courier findfont" << std::endl;
 	file << "0.12 scalefont" << std::endl;
 	file << "setfont" << std::endl;
-	/*
-	for (int i(0); i < N; i++)
-	{
-		file << "newpath" << std::endl;
-		file << x_cord[i] * scale << " " << y_cord[i] * scale << " " << r * scale << " 0 360 arc" << std::endl;
-		file << "closepath" << std::endl;
-		file << "1 1 0 setrgbcolor" << std::endl; // Inactive seeds
-		file << "fill" << std::endl;
-		file << "0.0 setlinewidth" << std::endl;
-	}
-	*/
+	
 	for (int i = 0; i < N; i++)
 	{
 		
@@ -438,33 +426,10 @@ int main()
 		file << "0.0 setlinewidth" << std::endl;
 		file << "fill" << std::endl;
 		file << "closepath" << std::endl;
-		/*
-		file << "newpath" << std::endl;
-		file << " 0.5 1 0.5 setrgbcolor" << std::endl;
-		file << x_cord[i] * scale << " " << y_cord[i] * scale << " " << r * scale << " " << "0 360 " << "arc" << std::endl;;
-		file << "0.0 setlinewidth" << std::endl;
-		file << "stroke" << std::endl;
-
-
-		file << "fill" << std::endl;
-		*/
+		
 	}
 	
 
-
-
-
-	//// get the end time 
-	//auto end = chrono::steady_clock::now();
-
-	////find the difference
-	//double elapsed_time_ns = double(std::chrono::duration_cast <std::chrono::nanoseconds> (end - start).count());
-
-	//// output
-	//std::cout << "elapsed time(s): " << elapsed_time_ns / 1e9 << endl;
-
-
-	
 	double mid_x, mid_y, normal_x, normal_y, V_x, V_y;
 	double validty_check, corner_mid_x, corner_mid_y, trimming_ratio, c1_x, c1_y, c2_x, c2_y, corneri_cornerj_x, corneri_cornerj_y;
 	for (size_t i = 0; i < covered.size(); i++)
@@ -656,10 +621,6 @@ int main()
 				}
 			}
 
-			//delete[] corners_x;
-			//delete[] corners_y;
-			//delete[] right;
-			//delete[] left;
 			
 			no_corners = counterr+1;
 			for (size_t k = 0; k < no_corners; k++)
@@ -693,27 +654,6 @@ int main()
 			}
 		}
 
-		/*
-		for (size_t k = 0; k < no_corners - 1; k++)
-		{
-			file << "newpath" << std::endl;
-			file << corners_x[k] * scale << " " << (corners_y[k]) * scale << " ";
-			file << "moveto" << std::endl;
-			file << corners_x[k + 1] * scale << " " << (corners_y[k + 1]) * scale << " ";
-			file << "lineto" << std::endl;
-			file << ".005 setlinewidth" << std::endl; // Inactive seeds
-			file << "0 0 0 setrgbcolor" << std::endl;
-			file << "stroke" << std::endl;
-		}
-
-		file << "newpath" << std::endl;
-		file << corners_x[0] * scale << " " << (corners_y[0]) * scale << " ";
-		file << "moveto" << std::endl;
-		file << corners_x[no_corners - 1] * scale << " " << (corners_y[no_corners - 1]) * scale << " ";
-		file << "lineto" << std::endl;
-		file << ".005 setlinewidth" << std::endl; // Inactive seeds
-		file << "0 0 0 setrgbcolor" << std::endl;
-		file << "stroke" << std::endl;*/
 		
 		
 		for (size_t k = 0; k < no_corners; k++)
