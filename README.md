@@ -18,6 +18,17 @@ Also it is very simple to sample from leaves with uniform probability.
                                                   fig.1
 In case of figure 1 domain width is 1cm and length is 1cm  and the disk radius is .01cm .
 
+## Voronoi diagram
+providing a voronoi diagram based on neighbor cells " we get that cells from previous algorithm".
+That algorithm uses hyperplan idea for creating the voronoi cell that has a corner in equal disance from all neighbours cells.
+![image](https://user-images.githubusercontent.com/67281513/138172654-ef4ecb27-df28-4a0e-95ed-0de293df90ee.png)              
+                                               
+                                               fig.2
+For high quality voronoi cells we use an uniform distribution of seeds "between each seed and another same distance" 
+![image](https://user-images.githubusercontent.com/67281513/138172952-c4605243-0c9a-492c-94e3-b426e9cae3f7.png)
+                                                
+                                                fig.3
+in figure 3 , the relation between number of corners and its angle .
 
 ## Referances
 
